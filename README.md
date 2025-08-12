@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 To use Lookup, you need a Scopus API key:
 
-1. Register for an API key at the Elsevier Developer Portal[Elsevier Developer Portal](https://dev.elsevier.com/).
+1. Register for an API key at the [Elsevier Developer Portal](https://dev.elsevier.com/).
 
 2. Once you have your API key, run the script once to save it locally:
 
@@ -39,7 +39,7 @@ To use Lookup, you need a Scopus API key:
 python lookup.py --api_key YOUR_SCOPUS_API_KEY
 ```
 
-You only need to do this once. After setting the key, you can run other commands without specifying the API key again.
+**You only need to do this once. After setting the key, you can run other commands without specifying the API key again.**
 
 ---
 
@@ -56,11 +56,3 @@ Or search by ORCID:
 ```bash
 python lookup.py --orcid 0000-0002-6782-5715
 ```
----
-
-## 📂 Project Structure
-
-lookup/
-├── lookup.py            # Main script
-├── requirements.txt     # Python dependencies
-└── README.md            # Documentation
