@@ -1,6 +1,11 @@
 # 🔍 Lookup
 
-**Lookup** is a research intelligence tool that helps you find information on researchers, their publications, and citations. It offers quick access to profiles, citation metrics, and collaboration networks, using data from the Scopus database to support accurate academic discovery and evaluation.
+#### This project was completed as part of the CS50 course.
+
+#### Video Demo:  [video]()
+
+#### Description:
+**Lookup** is a research intelligence tool that offers quick access to profiles, citation metrics, using data from the Scopus database to support accurate academic discovery and evaluation.
 
 ---
 
