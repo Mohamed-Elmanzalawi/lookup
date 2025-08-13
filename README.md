@@ -2,7 +2,7 @@
 
 #### This project was completed as part of the CS50 course.
 
-#### Video Demo:  [video]()
+#### Video Demo:  [video](https://www.youtube.com/watch?v=5m-e14IusHI)
 
 #### Description:
 **Lookup** is a research intelligence tool that offers quick access to profiles, citation metrics, using data from the Scopus database to support accurate academic discovery and evaluation.
