@@ -56,7 +56,7 @@ Search by first name and last name:
 python lookup.py --last Nakamura --first Yasukazu
 ```
 
-Or search by ORCID:
+Or search by ORCID id:
 
 ```bash
 python lookup.py --orcid 0000-0002-6782-5715
