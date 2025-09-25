@@ -2,9 +2,10 @@
 
 #### This project was completed as part of the CS50 course.
 
-#### Video Demo:  [video](https://www.youtube.com/watch?v=5m-e14IusHI)
+#### Video Demo: [video](https://www.youtube.com/watch?v=5m-e14IusHI)
 
 #### Description:
+
 **Lookup** is a command-line research intelligence tool designed to streamline academic discovery by retrieving detailed researcher profiles and citation metrics from the Scopus database. By providing simple search options—either by author name or ORCID ID—users can access up-to-date academic data without manually browsing through complex interfaces.
 
 The tool is particularly useful for students, academics, and research administrators who require fast, reliable access to publication and citation statistics for academic evaluation, networking, or bibliometric analysis.
@@ -14,6 +15,7 @@ The project integrates with the Elsevier Scopus API to ensure accurate and autho
 ---
 
 ## 🎯 Project Goals
+
 The primary objectives of Lookup were:
 
 - Simplified Access – Reduce the complexity of searching Scopus by allowing researchers to query directly from the terminal.
@@ -25,29 +27,33 @@ The primary objectives of Lookup were:
 - API Key Management – Allow the user to set their Scopus API key once, avoiding repeated authentication steps.
 
 ---
+
 ## 🗂 File Structure and Roles
 
 The project currently consists of two main files:
 
-- **`lookup.py`** – Core Python script containing all main functionalities.  
+- **`lookup.py`** – Core Python script containing all main functionalities.
 - **`requirements.txt`** – Dependency list for running the project.
 
 ---
 
 ### 1. `lookup.py`
 
-This is the primary executable script.  
+This is the primary executable script.
 
 #### **Imports**
-- `requests` – Handles API communication.  
-- `argparse` – Parses command-line arguments.  
-- `sys` – Manages system exits and error handling.  
+
+- `requests` – Handles API communication.
+- `argparse` – Parses command-line arguments.
+- `sys` – Manages system exits and error handling.
 
 #### **Global Variables**
-- `API_KEY` – Stores the user's Scopus API key.  
-- `HEADERS` – Defines HTTP headers required for API requests.  
+
+- `API_KEY` – Stores the user's Scopus API key.
+- `HEADERS` – Defines HTTP headers required for API requests.
 
 #### **Functions**
+
 - **`get_info_by_name(last_name, first_name, orcid=None)`**  
   Retrieves researcher details based on last and first names.  
   If an ORCID is provided, only matching profiles are returned.
@@ -78,6 +84,7 @@ This is the primary executable script.
 ## ⚙️ Installation and Setup
 
 Clone the repository
+
 ```bash
 git clone https://github.com/your-username/lookup.git
 cd lookup
@@ -88,6 +95,7 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
 ---
 
 ## 🔑 Setting Up Your Scopus API Key
@@ -97,7 +105,6 @@ To use Lookup, you need a Scopus API key:
 1. Register for an API key at the [Elsevier Developer Portal](https://dev.elsevier.com/).
 
 2. Once you have your API key, run the script once to save it locally:
-
 
 ```bash
 python lookup.py --api_key YOUR_SCOPUS_API_KEY
@@ -120,6 +127,7 @@ Or search by ORCID id:
 ```bash
 python lookup.py --orcid 0000-0002-6782-5715
 ```
+
 ---
 
 ## 💡 Design Decisions
@@ -143,18 +151,17 @@ Several key design choices shaped this project:
 
 ---
 
-  ## 📈 Possible Improvements
+## 📈 Possible Improvements
 
 Future enhancements could include:
 
-- **Publication List Retrieval** – Returning titles, journals, and publication years.  
-- **Export to CSV/JSON** – Allowing citation data to be saved for further analysis.  
-- **Batch Processing** – Supporting multiple researchers from a file.  
-- **Integration with Other Databases** – Adding PubMed or Web of Science search capability.  
+- **Publication List Retrieval** – Returning titles, journals, and publication years.
+- **Export to CSV/JSON** – Allowing citation data to be saved for further analysis.
+- **Batch Processing** – Supporting multiple researchers from a file.
+- **Integration with Other Databases** – Adding PubMed or Web of Science search capability.
 
 ---
 
 ## 🙌 Conclusion
 
 Lookup successfully meets its core goal: enabling fast, reliable, and user-friendly access to Scopus researcher profiles. By combining a minimalistic CLI interface with robust API integration, it provides an efficient academic discovery tool for researchers and administrators. While future improvements could expand its features, the current version is already a practical and time-saving solution for bibliometric analysis.
-
